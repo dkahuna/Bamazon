@@ -9,12 +9,19 @@ var connection = mysql.createConnection ({
     user: "root",
     password: "chocolateMint",
     port: 3306,
-    database: "products"
+    database: "bamazon"
 });
 
 // MAKING THE CONNECTION
 connection.connect(function(err){
-
     if (err) throw err;
     console.log("You're now connected with Bamazon Products!")
 });
+
+function displayProducts () {
+
+    var query = "SELECT * FROM products"
+    connection.query(query, function (err, res){
+        console.log(res);
+    })
+}

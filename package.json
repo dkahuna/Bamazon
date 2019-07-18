@@ -19,7 +19,6 @@
   "homepage": "https://github.com/dkahuna/Bamazon#readme",
   "dependencies": {
     "inquirer": "^6.5.0",
-    "mysql": "^2.17.1",
-    "requirer": "0.0.4"
+    "mysql": "^2.17.1"
   }
 }

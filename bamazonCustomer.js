@@ -4,6 +4,8 @@ var inquirer = require("inquirer");
 
 
 // NEXT IS TO MAKE THE CONNECTION WITH USING THE PACKAGE DOWNLOADED WITH 'mysql' and 'requirer
+
+// needing to make .env secret keys for the password and user so it is not pushed up
 var connection = mysql.createConnection ({
     
     host: "localhost",
